@@ -2,3 +2,6 @@ out/
 cache/
 node_modules/
 .env
+0x*.txt
+mnemonic.txt
+package-lock.json
