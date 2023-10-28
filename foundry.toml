@@ -2,6 +2,7 @@
 src = 'src'
 out = 'out'
 libs = ['lib']
+test = 'test'
 
 [rpc_endpoints]
 mainnet = "https://rpc.ankr.com/eth"
