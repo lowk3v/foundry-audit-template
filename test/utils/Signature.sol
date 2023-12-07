@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
 pragma solidity ^0.8.0;
 
-contract SignatureHelper {
+import "forge-std/Test.sol";
+
+contract SignatureHelper is Test {
 
     function sign65chars(uint256 pk, bytes32 data) public view returns (bytes memory signature) {
         bytes32 toEthSignedMessageHash = keccak256(abi.encodePacked("\x19Ethereum Signed Message:\n32", data));
