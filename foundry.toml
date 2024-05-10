@@ -30,4 +30,5 @@ variable_override_spacing = true
 wrap_comments = false
 ignore = []
 
-# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+# See more config options https://github.com/foundry-rs/foundry/tree/master/crates/config
+

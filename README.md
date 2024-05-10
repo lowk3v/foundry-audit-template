@@ -16,6 +16,13 @@ forge test
 
 ## Features
 
+### Lib common
+
+| Contract | Description |
+| --- | --- |
+| `CommonUniswapV2/swapExactInput` | Swap exact tokens to tokens on pool v2|
+| `CommonUniswapV3/swapExactInput` | Swap exact tokens to tokens on pool v3|
+
 ### Testing Utilities
 
 Includes a `Utilities.sol` contract with common testing methods (like creating users with an initial balance), as well as various other utility contracts.

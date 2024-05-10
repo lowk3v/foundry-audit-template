@@ -4,6 +4,7 @@ scope:
 	[ -f `pwd`/scope.txt ] && echo 'Colorized auditing scope' || { echo 'The file scope.txt is empty' ; touch scope.txt; exit 1; }; \
 	inScope=''; while read -r line; do \
 		inScope="$$inScope \n\t{ \"path\": \"$$line\", \"symbol\": \"AS\", \"tooltip\": \"Auditing Scope\", \"color\": \"blue\" },"; \
+		echo $$line; \
 	done < `pwd`/scope.txt; \
 	inScope=$$(echo $$inScope | sed 's/,$$//'); \
 	currentSetting=$$(cat `pwd`/.vscode/settings.json); \
